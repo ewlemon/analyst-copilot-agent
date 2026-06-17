@@ -1,0 +1,25 @@
+# Secrets — never commit the real key, only .env.example
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Data — datasets and the built database are not committed
+*.db
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated charts (keep the curated ones in output/examples, ignore scratch)
+/charts/
+*.tmp.png
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

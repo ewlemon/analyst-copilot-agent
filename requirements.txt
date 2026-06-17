@@ -1,0 +1,13 @@
+# Core
+anthropic>=0.40.0       # Claude API client (tool use)
+python-dotenv>=1.0.0    # loads ANTHROPIC_API_KEY from .env
+
+# Data + charts
+pandas>=2.0.0
+matplotlib>=3.7.0
+
+# UI
+streamlit>=1.30.0
+
+# Dev / tests
+pytest>=7.0.0
