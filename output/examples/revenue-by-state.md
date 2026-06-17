@@ -6,11 +6,11 @@
 
 The top 5 states by revenue are:
 
-1. **SP (São Paulo)** - $2,212,670
-2. **RJ (Rio de Janeiro)** - $648,044
-3. **MG (Minas Gerais)** - $621,062
-4. **RS (Rio Grande do Sul)** - $350,868
-5. **PR (Paraná)** - $292,418
+1. **SP (São Paulo)**: $2,212,670
+2. **RJ (Rio de Janeiro)**: $648,044
+3. **MG (Minas Gerais)**: $621,062
+4. **RS (Rio Grande do Sul)**: $350,868
+5. **PR (Paraná)**: $292,418
 
 São Paulo dominates, generating more than 3× the revenue of the second-place
 state. These five states account for the large majority of revenue.
@@ -35,8 +35,8 @@ LIMIT 5;
 
 I re-ran the query independently against the database; every figure matched the
 agent's answer exactly (SP 2,212,670 / RJ 648,044 / MG 621,062 / RS 350,868 /
-PR 292,418). The agent's revenue definition - `SUM(price × quantity)` joined
-across `order_items → orders → customers` - is the correct one for this question.
+PR 292,418). The agent's revenue definition (`SUM(price × quantity)` joined
+across `order_items → orders → customers`) is the correct one for this question.
 
 **Caveat noted by the agent:** revenue here reflects selling price, not gross
 profit (margins aren't factored in). A natural follow-up is the gross-profit

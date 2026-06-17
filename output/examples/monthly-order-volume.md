@@ -7,7 +7,7 @@
 Monthly order volume showed clear **seasonal patterns** over the 24-month period:
 
 - **Baseline (Jan-Oct):** relatively stable, ~130-150 orders/month.
-- **Holiday surge (Nov-Dec):** sharp spikes both years - 2023 hit 299 (Nov) /
+- **Holiday surge (Nov-Dec):** sharp spikes both years: 2023 hit 299 (Nov) /
   317 (Dec); 2024 hit 336 (Nov) / 334 (Dec).
 - **Post-holiday dip:** January 2024 fell to ~120 before stabilizing.
 - **Year-over-year:** the 2024 holiday peak slightly exceeded 2023's.

@@ -2,7 +2,7 @@
 
 Given a plain-English business question, this drives Claude through an agentic
 loop: Claude inspects the schema, writes read-only SQL, looks at the results,
-optionally charts them, and finally writes a plain-English answer - always
+optionally charts them, and finally writes a plain-English answer, always
 showing the exact SQL it ran so a human analyst can verify it.
 
 Run from the command line:
@@ -38,7 +38,7 @@ def api_key_problem() -> str | None:
             "ANTHROPIC_API_KEY is missing or still the placeholder. Open .env "
             "and replace 'sk-ant-your-key-here' with a real key from "
             "https://console.anthropic.com (Settings -> API keys), and add a "
-            "little credit under Billing. See docs/learning-guide.md, Module 0."
+            "little credit under Billing."
         )
     return None
 
@@ -46,7 +46,7 @@ SYSTEM_PROMPT = """\
 You are an analyst copilot for an e-commerce business. A human business analyst \
 asks you questions in plain English. You answer by querying a SQLite database \
 with read-only SQL and explaining what you find. You are a tool the analyst \
-supervises - they will read the SQL you ran and decide whether to trust it, so \
+supervises. They will read the SQL you ran and decide whether to trust it, so \
 make your work transparent.
 
 How to work:
@@ -65,7 +65,7 @@ Conventions for this database:
 
 Rules:
 - Only ever read data. You cannot modify the database.
-- Every number you state must come from a query you actually ran - never \
+- Every number you state must come from a query you actually ran. Never \
 estimate or invent figures.
 - End your final answer with a short "Caveats" section (1-3 bullets) noting \
 assumptions or data limitations, so the analyst knows what to double-check.

@@ -1,4 +1,4 @@
-# Secrets - never commit the real key, only .env.example
+# Secrets: never commit the real key, only .env.example
 .env
 
 # Python
@@ -9,7 +9,7 @@ venv/
 .pytest_cache/
 *.egg-info/
 
-# Data - datasets and the built database are not committed
+# Data: datasets and the built database are not committed
 *.db
 data/raw/*
 !data/raw/.gitkeep

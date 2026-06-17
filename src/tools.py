@@ -4,9 +4,9 @@ Each function here is the *implementation* the harness runs when Claude asks to
 use a tool. They are plain Python functions with no Claude dependency, so they
 are easy to test on their own (see ``tests/``).
 
-- ``get_schema``  - describe the database so the agent knows what it can query.
-- ``run_sql``     - run a validated, read-only query and return a readable table.
-- ``make_chart``  - run a query and save a chart image; return its file path.
+- ``get_schema``: describe the database so the agent knows what it can query.
+- ``run_sql``: run a validated, read-only query and return a readable table.
+- ``make_chart``: run a query and save a chart image; return its file path.
 """
 
 from __future__ import annotations

@@ -14,7 +14,7 @@ Reference material for the Analyst Copilot Agent project.
   optionally load (~100k orders across related tables). Informed the synthetic
   generator's structure (Brazilian states, product categories, review scores).
 
-### 2. Anthropic Claude API - Tool Use
+### 2. Anthropic Claude API: Tool Use
 - **URL:** https://docs.claude.com/en/docs/agents-and-tools/tool-use/overview
 - **Publisher:** Anthropic
 - **Accessed:** 2026-06-17
@@ -22,7 +22,7 @@ Reference material for the Analyst Copilot Agent project.
   structure (`tool_use` stop reason, `tool_result` messages) used in
   `src/agent.py`.
 
-### 3. Anthropic Claude API - Messages
+### 3. Anthropic Claude API: Messages
 - **URL:** https://docs.claude.com/en/api/messages
 - **Publisher:** Anthropic
 - **Accessed:** 2026-06-17
