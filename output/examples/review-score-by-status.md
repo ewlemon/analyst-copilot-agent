@@ -15,7 +15,7 @@ Delivered orders score highest (4.22/5) on by far the largest sample; canceled
 orders score lowest (1.95), as expected. Processing and shipped sit in the
 middle while customers await delivery.
 
-*(The agent chose not to chart this one — a four-row table reads fine as text.)*
+*(The agent chose not to chart this one - a four-row table reads fine as text.)*
 
 ## The SQL the agent wrote
 
@@ -36,6 +36,6 @@ Re-ran independently; all four averages and counts matched (Delivered 4.22 /
 3,499 … Canceled 1.95 / 166). The `LEFT JOIN` is the right choice so statuses
 with no reviews wouldn't silently vanish.
 
-**Caveat noted by the agent:** sample sizes differ sharply — the delivered
+**Caveat noted by the agent:** sample sizes differ sharply - the delivered
 average rests on 3,499 reviews, the others on a few hundred or fewer, so the
 non-delivered scores are noisier.

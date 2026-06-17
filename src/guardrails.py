@@ -22,7 +22,7 @@ DB_PATH = Path(__file__).resolve().parents[1] / "data" / "analytics.db"
 
 # Statement keywords that must never appear. These are matched as whole tokens,
 # so a column named ``update_date`` or the scalar function ``replace(...)`` is
-# unaffected — only the standalone keywords are blocked. ``replace`` and other
+# unaffected - only the standalone keywords are blocked. ``replace`` and other
 # common scalar-function names are deliberately *not* here; the "must start with
 # SELECT/WITH" rule already blocks ``REPLACE INTO`` and friends.
 _FORBIDDEN = {
@@ -61,7 +61,7 @@ def validate_sql(sql: str) -> str:
     body = cleaned.rstrip(";").strip()
     if ";" in body:
         raise UnsafeQueryError(
-            "Only one statement is allowed — remove the extra ';'."
+            "Only one statement is allowed - remove the extra ';'."
         )
 
     lowered = body.lower()

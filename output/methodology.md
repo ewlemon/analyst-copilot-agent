@@ -18,12 +18,12 @@ The agent is a loop (`src/agent.py`) over the Claude API with three tools:
 
 | Step | What happens |
 |---|---|
-| 1. Understand | The model reads the question and, if unsure, calls `get_schema` to learn the tables and columns — it does not guess the schema. |
-| 2. Query | It writes a single read-only `SELECT`/`WITH` query and runs it with `run_sql`. It may iterate — refining the query if the first result is incomplete or surprising. |
+| 1. Understand | The model reads the question and, if unsure, calls `get_schema` to learn the tables and columns - it does not guess the schema. |
+| 2. Query | It writes a single read-only `SELECT`/`WITH` query and runs it with `run_sql`. It may iterate - refining the query if the first result is incomplete or surprising. |
 | 3. Visualize | For rankings, trends, and comparisons it calls `make_chart`, which re-runs a validated query and renders a PNG. |
 | 4. Explain | It writes a plain-English answer for a non-technical reader, ending with a short **Caveats** section. |
 
-Every figure in an answer must come from a query the agent actually ran — the
+Every figure in an answer must come from a query the agent actually ran - the
 system prompt forbids estimating or inventing numbers.
 
 ---
@@ -54,7 +54,7 @@ control:
 
 The recommended verification habit: for any answer that will inform a decision,
 re-run (or read) the agent's SQL and confirm the number independently. The
-project's end-to-end test does exactly this — it checks the agent's figure
+project's end-to-end test does exactly this - it checks the agent's figure
 against a hand-written query.
 
 ---

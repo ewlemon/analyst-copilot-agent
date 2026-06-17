@@ -3,13 +3,13 @@
 The agent queries a local SQLite database, `analytics.db`, that models an
 e-commerce business with six related tables.
 
-## Quick start (default — synthetic data)
+## Quick start (default - synthetic data)
 
 ```bash
 python data/build_db.py
 ```
 
-This generates a **seeded synthetic** dataset (deterministic — same data every
+This generates a **seeded synthetic** dataset (deterministic - same data every
 run) and writes `data/analytics.db`. No downloads, no accounts, no API key
 needed. This is the path the tests and examples assume.
 
@@ -22,7 +22,7 @@ needed. This is the path the tests and examples assume.
 | `orders` | one row per order | `order_id`, `customer_id`, `order_date`, `status` |
 | `order_items` | one row per line item | `order_id`, `product_id`, `quantity`, `price` |
 | `payments` | one row per payment | `order_id`, `payment_type`, `installments`, `value` |
-| `reviews` | one row per review | `order_id`, `score` (1–5), `review_date` |
+| `reviews` | one row per review | `order_id`, `score` (1-5), `review_date` |
 
 **Conventions**
 - *Revenue* = `SUM(order_items.price * order_items.quantity)`.
@@ -48,7 +48,7 @@ dataset on Kaggle.
    - `olist_order_reviews_dataset.csv` → `reviews`
 3. Write a loader that reads those CSVs and inserts them into the same schema
    (`build_db.py` is structured so this is a contained change). Keeping the
-   column names identical means **none of the agent code changes** — only the
+   column names identical means **none of the agent code changes** - only the
    data source does.
 
 > The synthetic generator deliberately uses Brazilian state codes and similar

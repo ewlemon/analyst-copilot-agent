@@ -5,7 +5,7 @@ Run it with:
     streamlit run src/app.py
 
 A text box takes a business question; the agent answers with a narrative, any
-charts it produced, and an expandable panel showing the exact SQL it ran — the
+charts it produced, and an expandable panel showing the exact SQL it ran - the
 analyst-in-the-loop verification surface.
 """
 
@@ -79,7 +79,7 @@ def _load_table(table: str) -> pd.DataFrame:
 st.title("📊 Analyst Copilot")
 st.caption(
     "Ask a business question in plain English. The agent writes its own "
-    "read-only SQL, runs it, charts the result, and explains the finding — "
+    "read-only SQL, runs it, charts the result, and explains the finding - "
     "and shows you every query so **you** stay the analyst in the loop."
 )
 
@@ -103,12 +103,12 @@ for problem in problems:
 with st.expander("📂 Browse the data the agent queries"):
     st.caption(
         "This is **synthetic sample** e-commerce data (no real customers). "
-        "Pick a table to see its columns and every row the agent can query — "
+        "Pick a table to see its columns and every row the agent can query - "
         "so you can check the agent's answers against the source yourself."
     )
     _table = st.selectbox("Table", _list_tables())
     _df = _load_table(_table)
-    st.write(f"**{_table}** — {len(_df):,} rows × {_df.shape[1]} columns")
+    st.write(f"**{_table}** - {len(_df):,} rows × {_df.shape[1]} columns")
     st.caption(
         "Columns: "
         + ", ".join(
